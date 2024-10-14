@@ -1,0 +1,79 @@
+/* Estilos gerais para o App */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo do logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Animação do logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34; /* Cor de fundo escura */
+  min-height: 100vh; /* Ocupa toda a altura da tela */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb; /* Cor do link padrão */
+}
+
+/* Estilos específicos do dashboard */
+.header-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bin-list,
+.route-map,
+.metrics-dashboard {
+  margin: 2rem;
+}
+
+.bin-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bin-list li {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.route-map {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.metrics-dashboard {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Animação do logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
